@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Dungeon RPG" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Dungeon RPG" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+					<Add option="-DSFML_STATIC" />
+					<Add directory="C:/Users/mikyj/OneDrive/Documents/SFML/include" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="sfml-graphics-d" />
+					<Add library="sfml-window-d" />
+					<Add library="sfml-system-d" />
+					<Add library="sfml-audio-d" />
+					<Add directory="C:/Users/mikyj/OneDrive/Documents/SFML/lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Dungeon RPG" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="sfml-graphics" />
+					<Add library="sfml-window" />
+					<Add library="sfml-system" />
+					<Add library="sfml-audio" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Bar.h" />
+		<Unit filename="include/Basic.h" />
+		<Unit filename="include/Button.h" />
+		<Unit filename="include/Entity.h" />
+		<Unit filename="include/Message.h" />
+		<Unit filename="include/MessageManager.h" />
+		<Unit filename="include/Monster.h" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/Weapon.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Bar.cpp" />
+		<Unit filename="src/Basic.cpp" />
+		<Unit filename="src/Button.cpp" />
+		<Unit filename="src/Entity.cpp" />
+		<Unit filename="src/Message.cpp" />
+		<Unit filename="src/MessageManager.cpp" />
+		<Unit filename="src/Monster.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Weapon.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
